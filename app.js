@@ -7,7 +7,7 @@ var app = express();
 
 
 app.get('/', function (req, res) {
-  res.send(req.query.a + req.query.b);
+  res.send(parseInt(req.query.a) + parseInt(req.query.b));
 });
 
 
